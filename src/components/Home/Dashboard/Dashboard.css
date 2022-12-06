@@ -1,0 +1,57 @@
+.Dash_main{
+    min-height: 90vh;
+    width: 100%;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
+}
+.Dash_contain{
+    background-color: white;
+    width: 60%;
+    height: 75vh;
+    backdrop-filter: (blur);
+    display: flex;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
+    border-radius: 8px;
+    position: relative;
+    z-index: 2;
+}
+.circle1, .circle2{
+    height:120px;
+    width: 120px;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
+    position: absolute;
+    border-radius: 50%;
+    /* background-color: tomato; */
+}
+.circle1{
+    bottom: 1.2%;
+    left: 15%;
+}
+.circle2{
+    top: 16%;
+    right:16%;
+}
+.profile{
+   width: 30%;
+   height: 100%;
+   background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
+}
+.Dashboard{
+    width: 70%;
+    height: 100%;
+}
+@media screen and (max-width:700px){
+   .profile{
+    display: none;
+   } 
+   .Dash_contain{
+    width: 90%;
+   }
+   .Dashboard{
+    width: 100%;
+    
+   }
+}
